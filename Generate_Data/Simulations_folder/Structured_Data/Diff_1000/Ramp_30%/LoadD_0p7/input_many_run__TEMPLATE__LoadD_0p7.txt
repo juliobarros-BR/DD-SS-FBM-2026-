@@ -1,0 +1,96 @@
+### Bundle and simulation properties:
+
+N = 40000 		# Number of fibers
+
+geometry = 0           # 0 for square, 1 for circular
+
+maximum_steps = 100	# Limit number of steps for each change of conditions (for both load and moisture)
+
+load_d = 0.7 	# Load degree compared to a non-slip and dry FBM
+
+period = 1    	# Time interval for each moisture change (normalized by the viscoelastic characteristic time):
+
+cycles_pre_load = 0    # Moisture cycles before loading
+
+cycles_loaded = 500	# Moisture cycles while loaded
+
+cycles_unload = 500	# Moisture cycles after loading
+
+creep_test = 0
+
+start_wet = 0
+
+
+
+
+### In case of moisture/load data set add the file names below, if empty the program will use the above defined variables
+
+moisture_df = 
+
+load_df =
+
+
+#### Folder for moisture simulations
+
+folder_moist = /local/home/jortiz/Julio_PhD/Fiber Bundle Model/FBM_Stick_Slip/Revisiting/Clean_copy_for_paper/Moisture_gradient/DD_SS_FBM_all/Generate_Moisture_Profiles/Moisture_Profiles_1000_ramp0.30
+checkpoint_path = ./slip_checkpoints.zarr
+
+
+
+moist_grad = 1  # 1 = with diffusion, 0 = without diffusion (instataneous changes)
+
+
+
+
+
+
+
+
+### Fiber mechanical properties:
+
+D_d = 1.0 	# Driest state elastic compliance
+
+D_w =  1.3	# Most wet state elastic compliance
+
+J_d = 0.2	# Driest state viscoelastic compliance
+
+J_w = 0.4	# Most state viscoelastic compliance
+
+alpha = 0.5 	# swelling coefficient
+
+tau = 0.0001
+
+KV_num   =  4
+
+
+
+### Threshold properties
+
+m_Weibull = 2.0
+
+lambda_Weibull = 7.0
+
+seed = 39
+
+decay = 11
+
+failure_limit = 0.3
+
+wet_scale = 0.7
+
+reverse_scale = 0.75
+
+hygro_slip = 0 # True or False
+
+init_th = 0.0
+
+Z = 0
+
+gamma_deg = 0.1
+
+cut_off = 0.01
+
+degradation_mode = 0 # 0 for exponential, 1 for linear
+
+
+
