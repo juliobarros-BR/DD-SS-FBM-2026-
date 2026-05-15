@@ -36,7 +36,7 @@ plt.rcParams.update({
     'savefig.bbox': 'tight',
     'savefig.pad_inches': 0.05,
     'figure.dpi': 150,
-})
+}) 
 
 # ============================================================
 # PATHS

@@ -356,7 +356,7 @@ def run_one_system_class(df_all, is_avg, label, metas):
         ax.set_xscale("log")
         ax.set_xlim(xmin_all * 0.8, xmax_all * 1.2)
         ax.set_xlabel(r"$Fo_{\mathrm{eff}}$")
-
+        ax.tick_params(axis="x", pad=8)
         # RAW y label (no "Normalized" wording)
         if MECH_COLUMN == "Mech_Ratio":
             ax.set_ylabel(r"$\varepsilon^{MS}_{\infty} / \varepsilon_{\infty}$")
@@ -432,13 +432,18 @@ def run_one_system_class(df_all, is_avg, label, metas):
                 (rf"$a/b={ab:.2f}$", "red"),
                 (rf"$b/c={bc:.2f}$", "red"),
             ]
+ 
+            TITLE_FONTSIZE = 20
+            PARAM_FONTSIZE = 20
 
             for j, (s, color) in enumerate(lines):
+                fs = TITLE_FONTSIZE if j == 0 else PARAM_FONTSIZE
+
                 t = legax.text(
                     xcols[i], ytop - j * dy, s,
                     transform=legax.transAxes,
                     ha="left", va="top",
-                    fontsize=22,
+                    fontsize=fs,
                     color=color,
                     zorder=10
                 )
