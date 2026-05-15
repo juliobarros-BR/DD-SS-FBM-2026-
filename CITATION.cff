@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata from this file."
+title: "The Role of Moisture Gradients and Time Scales in Wood Mechanosorption"
+authors:
+  - family-names: "Amando de Barros"
+    given-names: "Júlio"
+    email: "jortiz@ethz.ch"
+  - family-names: "Wittel"
+    given-names: "Falk K."
+    email: "fwittel@ethz.ch"
+repository-code: "https://github.com/juliobarros-BR/DD-SS-FBM-2026-"
+date-released: "2026-05-15"
+version: "1.0.0"
+license: "MIT"
+keywords:
+  - wood mechanosorption
+  - moisture gradients
+  - time scales
+  - fiber bundle model
+  - stick-slip
+  - hygromechanics
+  - wood mechanics
